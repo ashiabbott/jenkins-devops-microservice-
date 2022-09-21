@@ -19,6 +19,17 @@
 					echo "Integration Test"
 				}
 			}	
+		} 
+		post {
+			always{
+				echo 'im awesome. i run always'
+			}
+			success{
+				echo 'irun when success'
+			}
+			failure{
+				echo 'i run when fail'
+			}
 		}
 		
 	}
